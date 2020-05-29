@@ -1,0 +1,122 @@
+
+    
+.calendar
+    position: relative
+    
+.calendar__table
+    width:100%
+    height: calc(90vh - 128px)
+.calendar__list-icon 
+    width: 35px
+    height: 35px
+    line-height: 35px
+    text-align: center
+    color: #ffffff 
+    background-color: #007bff 
+    border-radius: 50%
+    margin-left: 25px
+    box-shadow: 0 6px 10px 0 #0000001a, 0 1px 18px 0 #0000001a, 0 3px 5px -1px #0003 
+    text-decoration: none
+    transition: transform 0.4s
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+        text-decoration: none
+        color: #ffffff
+        transform:  rotate(360deg) scale(1.2)
+
+@media only screen and (max-width: 767px) 
+    .calendar__list-icon
+        margin-left: 0px
+        margin-right: 25px
+
+.calendar__table td
+    padding: 10px 
+    border: 1px solid #CCC
+    vertical-align: top
+    width: 14.29%
+    height: 20%
+    
+.calendar__table--6weeks td
+    height: 16.66%
+
+.calendar__weekday    
+    font-weight: bold 
+    color: #000 
+    font-size: 1em
+
+.calendar__day  
+    font-size: 1em
+
+.calendar__othermonth .calendar__day  
+    opacity: 0.4      
+.calendar__event  
+    font-size: 0.7em
+    a:hover
+        color: #007bff
+
+.calendar__button
+    display: block  
+    width: 35px
+    height: 35px
+    line-height: 35px
+    text-align: center
+    color: #ffffff
+    font-size: 30px
+    background-color: #007bff 
+    border-radius: 50%
+
+    box-shadow: 0 6px 10px 0 #0000001a, 0 1px 18px 0 #0000001a, 0 3px 5px -1px #0003 
+    position: absolute
+    bottom: -50px
+    left: 50% 
+    text-decoration: none
+    transition: transform 0.3s
+
+.calendar__button:hover
+    text-decoration: none
+    color: #ffffff
+    transform:  rotate(360deg) scale(1.5)
+    
+
+.monthBtn
+    color: #fff
+    background-color: #007bff
+    border-color: #007bff
+
+.eventBtn
+    margin-top: 30px
+
+    width: 35px
+    height: 35px
+    line-height: 35px
+    text-align: center
+    color: #ffffff
+    font-size: 30px
+    background-color: #007bff 
+    border-radius: 50%
+
+    box-shadow: 0 6px 10px 0 #0000001a, 0 1px 18px 0 #0000001a, 0 3px 5px -1px #0003 
+  
+    text-decoration: none
+    transition: transform 0.3s
+
+.eventBtn:hover
+   
+    transform:  rotate(360deg) scale(1.25)
+
+.btnWarning 
+    height: 20px
+    width: 20px
+    color: #fff
+    background-color: #ffc107
+    border-color: #ffc107
+
+#newsletter 
+    background-color: #f5f5f5
+
+
+.notRead
+    background-color:rgb(253, 132, 132)
+    
